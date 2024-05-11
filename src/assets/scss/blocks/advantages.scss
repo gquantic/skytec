@@ -1,0 +1,75 @@
+.advantages-block {
+  height: 1111px;
+  background: url("/src/assets/img/advantages/bg-advantages.webp");
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+
+  .line {
+    height: 158px;
+    width: 1px;
+    background: #fff;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    min-height: 158px;
+
+    .gradient-line {
+      position: absolute;
+      top: 0;
+      transform: translateY(-15px);
+    }
+
+    p {
+      width: 333px;
+      font-size: 24px;
+    }
+  }
+
+  .width-item {
+    .gradient-line {
+      top: auto;
+      bottom: 0;
+      margin-bottom: 0;
+      margin-top: 43px;
+      transform: translateY(15px);
+    }
+
+    p {
+      width: 371px;
+    }
+  }
+}
+
+.top-bar-block {
+  background: #4766AF;
+  height: 56px;
+  width: 100%;
+
+  .container {
+    position: relative;
+    padding-right: 156px;
+
+    .media-buying {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-left: 355px;
+      margin-top: -50px;
+    }
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 32px;
+    margin-right: 48px;
+  }
+}

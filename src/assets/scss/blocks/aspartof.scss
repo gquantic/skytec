@@ -1,0 +1,79 @@
+.as-part-of {
+  h2 {
+    font-size: 88px;
+    margin-bottom: -30px;
+  }
+}
+
+.rewards-block {
+  margin-top: 271px;
+  .rewards-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .rewards {
+    position: relative;
+    margin-top: 16px;
+    width: 100%;
+    padding: 72px 257px 72px 171px;
+    background: #4766AF;
+    border-radius: 0 66px 66px 66px;
+    height: 230px;
+    overflow: hidden;
+    transition: 1s;
+
+    &.show {
+      height: 1281px;
+    }
+
+    &__item {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      font-size: 32px;
+      font-weight: bold;
+      width: 304px;
+
+      p {
+        margin-bottom: 0;
+        margin-left: 8px;
+      }
+    }
+
+    &__open-full {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-top: 72px;
+      margin-right: 72px;
+      cursor: pointer;
+    }
+
+    // Items, which show by click to the btn
+    .content {
+      margin-top: 32px;
+      opacity: 0;
+      transition: opacity 1s;
+      color: #fff;
+      display: block;
+
+      .rewards__item p {
+        font-size: 24px;
+      }
+
+      hr {
+        opacity: 1;
+        margin-top: 158px;
+      }
+
+      &.show {
+        opacity: 1;
+      }
+
+      .column {
+        width: 304px;
+      }
+    }
+  }
+}

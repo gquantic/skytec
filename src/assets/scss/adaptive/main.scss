@@ -1,0 +1,19 @@
+@media (max-width: 500px) {
+  body, html {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding: 8px 20px;
+  }
+
+  .home-block {
+    .container .text {
+      font-size: 32px;
+    }
+  }
+
+  header .theme-change {
+    display: none;
+  }
+}
