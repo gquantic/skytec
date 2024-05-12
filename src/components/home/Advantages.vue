@@ -7,8 +7,9 @@
       </div>
       <div class="line"></div>
       <div class="item width-item">
+        <div v-if="width < 600" class="gradient-line gradient-line-mobile"></div>
         <p>Многолетний опыт работы с крупнейшими российскими и международными клиентами.</p>
-        <div class="gradient-line"></div>
+        <div v-if="width > 600" class="gradient-line"></div>
       </div>
       <div class="line"></div>
       <div class="item">

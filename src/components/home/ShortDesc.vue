@@ -47,14 +47,27 @@
 }
 @media only screen and (max-width: 600px) {
   .short-desc-block {
+    height: 568px;
     background: url(/src/assets/img/short-desc/bg-mobile.png) no-repeat;
     background-size: 100vw;
-    height: 100vh;
-
+    align-items: flex-end;
     h3 {
-      // TODO
-      font-size: 20px;
+      position: absolute;
+      margin-bottom: -140px;
       width: 57.5vw;
+      font-size: 20px;
+      display: flex;
+      svg {
+        position: absolute;
+        margin-left: 60vw;
+        margin-top: 20px;
+        width: 30px;
+        height: 84px;
+        ellipse {
+          rx: 15px;
+          ry: 15px;
+        }
+      }
     }
   }
 }

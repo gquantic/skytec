@@ -24,17 +24,17 @@
           <div class="d-flex footer-mobile-email">
             <div class="d-flex align-items-center">
               <img src="/src/assets/icons/phone-footer.svg" alt="" />
-              <p style="margin-left: 16px">8 495 660-47-47</p>
+              <p>8 495 660-47-47</p>
             </div>
             <div class="d-flex justify-content-around">
-              <div class="d-flex flex-column">
+              <div class="emails">
                 <div class="d-flex align-items-center">
                   <img src="/src/assets/icons/email-footer.svg" alt="" />
-                  <p style="margin-left: 16px">alexander.ludanniy@skytecmedia.ru</p>
+                  <p>alexander.ludanniy@skytecmedia.ru</p>
                 </div>
                 <div class="d-flex align-items-center">
                   <img src="/src/assets/icons/email-footer.svg" alt="" />
-                  <p style="margin-left: 16px">reception@skytecmedia.ru</p>
+                  <p>reception@skytecmedia.ru</p>
                 </div>
               </div>
             </div>

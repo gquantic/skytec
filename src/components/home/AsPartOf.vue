@@ -11,10 +11,6 @@
       </div>
     </div>
 
-    <!-- TODO: do this freakin button -->
-    <!-- <div class="rewards__open-full">
-      <img src="/src/assets/img/rewards/show-full-mobile.png" alt="" @click="showFullRewards" />
-    </div> -->
     <Rewards />
   </div>
 </template>

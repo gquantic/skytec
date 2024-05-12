@@ -13,7 +13,8 @@
   <Directions />
   <Work />
 
-  <img src="/src/assets/img/map.png" class="map" alt="" />
+  <img v-if="width > 600" src="/src/assets/img/map.png" class="map" alt="" />
+  <img v-else src="/src/assets/img/map-mobile.png" class="map" alt="" />
 </template>
 
 <script setup lang="ts">

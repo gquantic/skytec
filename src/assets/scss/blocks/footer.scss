@@ -1,0 +1,16 @@
+.footer {
+  .container {
+    .footer-other-info {
+      flex-direction: row;
+      .footer-mobile-email {
+        flex-direction: row;
+        .emails {
+          display: flex;
+        }
+        p {
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+}

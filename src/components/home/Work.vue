@@ -21,6 +21,7 @@
             />
           </div>
           <div class="work-footer">
+            <div v-if="width < 600" class="gradient-line gradient-line-work"></div>
             <div class="work-footer__item">
               <IconCircle icon="/src/assets/icons/phone.svg" />
               <div>
@@ -146,7 +147,7 @@
             </div>
           </div>
         </div>
-        <div class="d-flex justify-content-end mt-5">
+        <div class="d-flex justify-content-end mt-5 above-link-open">
           <a href="" class="link-open link-blue fs-32">Узнать больше</a>
         </div>
       </div>
