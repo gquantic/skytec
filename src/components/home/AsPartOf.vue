@@ -1,18 +1,27 @@
 <template>
   <div class="container block as-part-of">
-    <div class="d-flex justify-content-between">
+    <div class="d-flex justify-content-between exists">
       <div>
         <div class="gradient-line"></div>
         <h2>В составе</h2>
-        <object data="/src/assets/img/logo.svg" type="image/svg+xml"></object>
+        <object class="exists--logo" data="/src/assets/img/logo.svg" type="image/svg+xml"></object>
       </div>
       <div class="d-flex align-items-center">
-        <img src="/src/assets/icons/as-part-of.svg" alt="">
+        <img class="exists--part" src="/src/assets/icons/as-part-of.svg" alt="" />
       </div>
     </div>
+
+    <!-- TODO: do this freakin button -->
+    <!-- <div class="rewards__open-full">
+      <img src="/src/assets/img/rewards/show-full-mobile.png" alt="" @click="showFullRewards" />
+    </div> -->
     <Rewards />
   </div>
 </template>
 <script setup lang="ts">
 import Rewards from '@/components/home/Rewards.vue'
+let showFull = true
+function showFullRewards() {
+  showFull = false
+}
 </script>
