@@ -1,0 +1,63 @@
+@media (max-width: 500px) {
+  .advantages-block {
+    height: 568px;
+    background: url('/src/assets/img/advantages/bg-advantages-mobile.png') no-repeat;
+    background-size: 100vw;
+
+    .container {
+      flex-direction: column;
+    }
+    .line {
+      height: 1px;
+      width: 49.3vw;
+      background: #fff;
+      margin-bottom: 30px;
+    }
+
+    .item {
+      min-height: 0;
+      p {
+        font-size: 12px;
+        max-width: 150px;
+      }
+      .gradient-line-mobile {
+        transform: translateY(-80px);
+      }
+    }
+  }
+
+  .top-bar-block {
+    background: #4766af;
+    height: 28px;
+    width: 100%;
+
+    .container {
+      position: relative;
+      padding: 0;
+      height: 28px;
+
+      .on-top {
+        margin-left: 21px;
+        width: 28vw;
+      }
+
+      .media-buying {
+        margin-left: 40vw;
+        margin-top: -19px;
+        height: 64px;
+        width: 64px;
+      }
+    }
+    .a-refs {
+      margin-right: 16px;
+      display: flex;
+      align-items: center;
+    }
+    a {
+      font-size: 10px;
+      margin-right: 5px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}

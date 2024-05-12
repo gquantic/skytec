@@ -35,6 +35,11 @@ const width = window.innerWidth > 0 ? window.innerWidth : screen.width
   .home-block-background {
     background: url(/src/assets/img/bg_home-mobile.png) no-repeat;
     background-size: 100%;
+    .container {
+      .text {
+        font-size: 40px;
+      }
+    }
   }
 }
 </style>

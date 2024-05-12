@@ -1,22 +1,27 @@
-@import "bootstrap";
-@import "fonts";
-@import "components";
-@import "icons";
+@import 'bootstrap';
+@import 'fonts';
+@import 'components';
+@import 'icons';
 
 /** Themes **/
 
 /** BLOCKS AND PAGES **/
 
-@import "blocks/aspartof";
-@import "blocks/advantages";
-@import "blocks/team";
-@import "blocks/work";
-@import "blocks/footer";
+@import 'blocks/aspartof';
+@import 'blocks/advantages';
+@import 'blocks/team';
+@import 'blocks/work';
+@import 'blocks/footer';
 
 /** OTHER **/
 
 @media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
     max-width: 1443px;
   }
 }
@@ -27,11 +32,11 @@ $light-color: #000;
 $dark-bg: #313131;
 $dark-color: #fff;
 
-
-
 body {
   font-family: 'Gilroy';
-  transition: background-color .5s ease, color .5s ease;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
 
   &.light {
     background: $light-bg;
@@ -95,4 +100,9 @@ body {
 }
 
 // Adaptive
-@import "adaptive/main";
+@import 'adaptive/main';
+@import 'adaptive/aspartof';
+@import 'adaptive/advantages';
+@import 'adaptive/footer';
+@import 'adaptive/team';
+@import 'adaptive/work';
