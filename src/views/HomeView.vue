@@ -2,7 +2,7 @@
   <div class="home-block home-block-background">
     <div class="container">
       <div class="text">Группа медийных</div>
-      <div class="text" v-if="width > 600">агентств SkyAlliance</div>
+      <div class="text" v-if="width > 800">агентств SkyAlliance</div>
       <div class="text" v-else>агентств.</div>
     </div>
   </div>
@@ -29,7 +29,7 @@ const width = window.innerWidth > 0 ? window.innerWidth : screen.width
 </script>
 <style lang="scss">
 .home-block-background {
-  background: url(/src/assets/img/bg_home.png);
+  background: url(/src/assets/img/bg_home.png) no-repeat;
 }
 @media only screen and (max-width: 600px) {
   .home-block-background {

@@ -49,8 +49,8 @@ body {
 }
 
 .home-block {
-  height: 100vh;
-  width: 100%;
+  height: 1080px;
+  width: 100vw;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -99,10 +99,14 @@ body {
   }
 }
 
-// Adaptive
-@import 'adaptive/main';
-@import 'adaptive/aspartof';
-@import 'adaptive/advantages';
-@import 'adaptive/footer';
-@import 'adaptive/team';
-@import 'adaptive/work';
+// Adaptive phone
+@import 'adaptive/phone/main';
+@import 'adaptive/phone/aspartof';
+@import 'adaptive/phone/advantages';
+@import 'adaptive/phone/footer';
+@import 'adaptive/phone/team';
+@import 'adaptive/phone/work';
+
+// Adaptive tablet
+
+@import 'adaptive/tablet/main';

@@ -1,0 +1,505 @@
+@media only screen and (max-width: 1900px) and (min-width: 1200px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  // work
+
+  .work-block {
+    .work-body {
+      img {
+        width: 44.5vw;
+      }
+    }
+    .block {
+      padding: 166px 0 0 0;
+      .content {
+        padding: 30px 0 0 50px;
+      }
+      .our-team {
+        img {
+          width: 44.5vw;
+        }
+        .adv {
+          margin-top: 28px;
+          .adv__item {
+            margin-bottom: 18px;
+          }
+        }
+      }
+    }
+    .work-footer {
+      display: flex;
+      flex-direction: column;
+      .work-footer__item {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  // as part of
+
+  .as-part-of {
+    .exists {
+      display: flex;
+      //   flex-direction: column;
+      .exists--logo {
+        width: 24vw;
+      }
+    }
+    .rewards-block {
+      margin-top: 50px;
+    }
+  }
+
+  // team
+
+  .team-block {
+    .teammates {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .description {
+      padding-left: 218px;
+      p {
+        width: 31vw;
+      }
+      .full-btn {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+  body,
+  html {
+    overflow-x: hidden;
+
+    // home
+
+    .home-block {
+      .container {
+        .text {
+          text-align: center !important;
+        }
+      }
+    }
+
+    // advantages
+
+    .advantages-block {
+      text-align: start;
+      .item {
+        .gradient-line {
+          transform: translateX(-45px);
+        }
+      }
+    }
+
+    // directions
+  }
+  .directions-block {
+    padding: 100px 0 10px 0;
+  }
+
+  // work
+
+  .work-block {
+    padding: 70px 0;
+    .work {
+      .work-header {
+        h2 {
+          width: 500px;
+        }
+      }
+    }
+    .work-body {
+      img {
+        width: 44.5vw;
+      }
+    }
+    .block {
+      padding: 96px 0 0 0;
+      .content {
+        padding: 30px 0 0 50px;
+      }
+      .our-team {
+        img {
+          width: 44.5vw;
+        }
+        .adv {
+          margin-top: 28px;
+          .adv__item {
+            margin-bottom: 18px;
+          }
+        }
+      }
+    }
+    .work-footer {
+      display: flex;
+      flex-direction: column;
+      .work-footer__item {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  // as part of
+
+  .as-part-of {
+    .exists {
+      display: flex;
+      flex-direction: column;
+      .exists--logo {
+        width: 24vw;
+      }
+      .tablet-center {
+        align-self: center;
+      }
+    }
+    .rewards-block {
+      margin-top: 50px;
+      .rewards-title {
+        text-align: center;
+      }
+      .rewards {
+        padding: 72px 187px 72px 122px;
+      }
+    }
+  }
+
+  // team
+
+  .team-block {
+    .portrait {
+      width: 450px;
+      height: 450px;
+      img {
+        width: 450px;
+        height: 450px;
+      }
+    }
+    .teammates {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      .teammate {
+        width: 280px;
+        height: 280px;
+        margin-top: 60px;
+        .portrait {
+          width: 280px;
+          height: 280px;
+          img {
+            width: 280px;
+            height: 280px;
+          }
+        }
+      }
+    }
+    .description {
+      padding-left: 148px;
+      p {
+        width: 31vw;
+      }
+      .full-btn {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  // top bar block
+
+  .top-bar-block {
+    .a-refs {
+      margin-right: -150px;
+    }
+  }
+
+  // footer
+
+  .footer {
+    .container {
+      .links {
+        margin-left: 90px;
+        .common-links {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+      .footer-other-info {
+        display: flex;
+        flex-direction: column-reverse;
+        .copyright {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  body,
+  html {
+    overflow-x: hidden;
+
+    // home
+
+    .home-block {
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .text {
+          font-size: 72px;
+        }
+      }
+    }
+
+    // advantages
+
+    .advantages-block {
+      text-align: center;
+      .item {
+        width: 200px;
+        p {
+          font-size: 18px;
+        }
+        .gradient-line {
+          width: 100px;
+          height: 8px;
+        }
+      }
+    }
+
+    // directions
+  }
+  .directions-block {
+    padding: 100px 0 10px 0;
+    .image-direction {
+      justify-content: center !important;
+      margin-top: 20px;
+    }
+  }
+
+  // work
+
+  .work-block {
+    padding: 70px 0;
+    .work {
+      .work-header {
+        height: 155px;
+        padding: 0 40px;
+        h2 {
+          font-size: 24px;
+          width: 400px;
+        }
+        .link-open {
+          width: 300px;
+          display: flex;
+          align-items: center;
+        }
+        ::after {
+          margin-left: 10px;
+        }
+      }
+
+      .work-body {
+        padding: 0 0 0 0;
+        img {
+          width: 44.5vw;
+        }
+        div {
+          padding: 0 0 0 50px;
+          .link-open {
+            font-size: 24px;
+
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+    .block {
+      padding: 96px 0 0 0;
+      .content {
+        padding: 20px 0 0 30px;
+        h3 {
+          font-size: 28px;
+        }
+      }
+      .our-team {
+        img {
+          width: 44.5vw;
+        }
+        .adv {
+          margin-top: 16px;
+          .adv__item {
+            margin-bottom: 4px;
+            svg {
+              width: 48px;
+            }
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    .work-footer {
+      display: flex;
+      flex-direction: column;
+      .work-footer__item {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  // as part of
+
+  .as-part-of {
+    .exists {
+      display: flex;
+      flex-direction: column;
+      .exists--logo {
+        width: 24vw;
+      }
+      .tablet-center {
+        align-self: center;
+      }
+      h2 {
+        font-size: 56px;
+      }
+    }
+    .rewards-block {
+      margin-top: 50px;
+      .rewards-title {
+        text-align: center;
+      }
+      .rewards {
+        padding: 72px 142px 36px 42px;
+        .rewards__item {
+          width: 100px;
+          img {
+            width: 60px;
+          }
+        }
+        .rewards__open-full {
+          margin-right: 22px;
+        }
+      }
+    }
+  }
+
+  // team
+
+  .team-block {
+    padding: 68px 0 200px 0;
+    .col-lg-5 {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      span {
+        max-width: 240px;
+      }
+    }
+    .portrait {
+      width: 250px;
+      height: 250px;
+      img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+    .teammates-grid-mobile {
+      padding: 0 48px;
+    }
+    .teammates {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      .teammate {
+        width: 190px;
+        height: 190px;
+        margin-top: 95px;
+        .portrait {
+          width: 190px;
+          height: 190px;
+          img {
+            width: 190px;
+            height: 190px;
+          }
+        }
+      }
+    }
+    .description {
+      width: 200px;
+      padding-left: 0px;
+      p {
+        margin-top: 40px;
+        width: 320px;
+      }
+      .full-btn {
+        margin-top: -10px;
+        position: absolute;
+        left: 0;
+        margin-left: 20px;
+      }
+      h2 {
+      }
+    }
+  }
+
+  // top bar block
+
+  .top-bar-block {
+    .on-top {
+      width: 200px;
+    }
+    .container {
+      .media-buying {
+        width: 100px;
+        margin-top: -24px;
+        margin-left: 244px;
+      }
+    }
+
+    .a-refs {
+      margin-right: -150px;
+    }
+  }
+
+  // footer
+
+  .footer {
+    .container {
+      .links {
+        margin-left: 50px;
+        p {
+          align-self: center;
+        }
+        .line {
+          height: 100px;
+        }
+        .common-links {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+      .footer-other-info {
+        display: flex;
+        flex-direction: column-reverse;
+        .copyright {
+          margin-top: 30px;
+        }
+        .footer-mobile-email {
+          justify-content: space-between;
+          .emails {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}

@@ -25,7 +25,7 @@
       <div class="a-refs">
         <a href="">adindex.ru</a>
         <a href="">sostav.ru</a>
-        <a href="" v-if="width > 600">adindex.ru/ratings/</a>
+        <a href="" v-if="width > 1400">adindex.ru/ratings/</a>
       </div>
     </div>
   </div>
