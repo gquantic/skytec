@@ -18,18 +18,7 @@
       </div>
       <!-- SHOW FULL BTN -->
       <div class="rewards__open-full">
-        <img
-          v-if="width > 600"
-          src="/src/assets/img/rewards/show-full.png"
-          alt=""
-          @click="showFullRewards"
-        />
-        <img
-          v-else
-          src="/src/assets/img/rewards/show-full-mobile.png"
-          alt=""
-          @click="showFullRewards"
-        />
+        <img src="/src/assets/img/rewards/show-full.png" alt="" @click="showFullRewards" />
       </div>
       <div class="content" id="rewards-content">
         <div class="d-flex justify-content-between">
@@ -91,10 +80,8 @@
   </div>
 </template>
 <script setup lang="ts">
-const width = window.innerWidth > 0 ? window.innerWidth : screen.width
-
 function showFullRewards() {
-  document.getElementById('rewards-content').classList.toggle('show')
-  document.getElementById('rewards-block').classList.toggle('show')
+  document!.getElementById('rewards-content')!.classList!.toggle('show')
+  document!.getElementById('rewards-block')!.classList!.toggle('show')
 }
 </script>
