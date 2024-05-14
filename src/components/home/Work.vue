@@ -12,16 +12,11 @@
               <a href="" class="link-open">Вакансии</a>
               <a href="" class="link-open">Пригласить в тендер</a>
             </div>
-            <img v-if="width > 600" src="/src/assets/img/work/img.png" alt="" />
-            <img
-              v-else
-              src="/src/assets/img/work/img-mobile.png"
-              alt=""
-              class="work-image-mobile"
-            />
+            <img src="/src/assets/img/work/img.png" alt="" class="work-image-laptop" />
+            <img src="/src/assets/img/work/img-mobile.png" alt="" class="work-image-mobile" />
           </div>
           <div class="work-footer">
-            <div v-if="width < 600" class="gradient-line gradient-line-work"></div>
+            <div class="gradient-line gradient-line-work"></div>
             <div class="work-footer__item">
               <IconCircle icon="/src/assets/icons/phone.svg" />
               <div>
@@ -55,8 +50,8 @@
       <div class="block">
         <div class="our-team">
           <div class="d-flex">
-            <img v-if="width > 600" src="/src/assets/img/work/img2.png" alt="" />
-            <img v-else src="/src/assets/img/work/img2-mobile.png" alt="" />
+            <img src="/src/assets/img/work/img2.png" alt="" class="second-img-work-laptop" />
+            <img src="/src/assets/img/work/img2-mobile.png" alt="" class="second-img-work-min" />
             <div class="content">
               <h3>Работа у нас — это</h3>
 
@@ -158,8 +153,6 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 import IconCircle from '@/components/icons/IconCircle.vue'
-
-const width = window.innerWidth > 0 ? window.innerWidth : screen.width
 
 const props = defineProps({
   short: {

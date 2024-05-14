@@ -1,0 +1,447 @@
+@media only screen and (max-width: 770px) and (min-width: 500px) {
+  body,
+  html {
+    overflow-x: hidden;
+
+    // home
+
+    .home-block {
+      height: 100vh;
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .text {
+          font-size: 48px;
+          &:nth-child(3) {
+            margin-right: -120px;
+          }
+        }
+      }
+    }
+
+    // advantages
+
+    .advantages-block {
+      height: 568px;
+      background: url('/src/assets/img/advantages/bg-advantages-mobile.png') no-repeat;
+      background-size: 100vw;
+
+      .container {
+        flex-direction: column;
+      }
+      .line {
+        height: 1px;
+        width: 49.3vw;
+        background: #fff;
+        margin-bottom: 30px;
+      }
+
+      .item {
+        min-height: 0;
+        p {
+          font-size: 14px;
+          max-width: 300px;
+        }
+        .gradient-line {
+          height: 5px;
+        }
+        .gradient-line-mobile {
+          transform: translateY(-65px);
+        }
+      }
+    }
+
+    // directions
+  }
+  .directions-block {
+    padding: 100px 0 10px 0;
+    .image-direction {
+      justify-content: center !important;
+      margin-top: 20px;
+    }
+    .row {
+      h2 {
+        font-size: 32px;
+      }
+      .directions__item {
+        margin-top: 40px;
+        h3 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  // work
+
+  .work-block {
+    padding: 70px 0;
+    .work {
+      .work-header {
+        height: 111px;
+        padding: 0 40px;
+        h2 {
+          font-size: 16px;
+          width: 400px;
+        }
+        .link-open {
+          width: 300px;
+          display: flex;
+          align-items: center;
+          font-size: 18px;
+          margin-top: 12px;
+        }
+        ::after {
+          margin-left: 10px;
+        }
+      }
+
+      .work-body {
+        padding: 0 0 0 0;
+        img {
+          width: 44.5vw;
+          max-width: 250px;
+        }
+        div {
+          padding: 0 0 0 50px;
+          .link-open {
+            font-size: 14px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+          }
+          ::after {
+            width: 15px;
+            height: 10px;
+          }
+        }
+      }
+    }
+    .block {
+      .second-img-work-laptop {
+        display: none;
+      }
+      .second-img-work-min {
+        display: block;
+      }
+
+      padding: 40px 0;
+      .content {
+        padding: 25px 6.25vw 20px 4.38vw;
+        h3 {
+          font-size: 10px;
+        }
+        svg {
+          height: 21px;
+          width: 21px;
+        }
+
+        p {
+          font-size: 8px;
+          margin-left: 4px;
+        }
+        .adv {
+          margin-top: 0;
+          &__item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+          }
+        }
+      }
+      .above-link-open {
+        margin-top: 24px !important;
+        .link-open {
+          font-size: 12px;
+          display: flex;
+          align-items: center;
+          margin-right: 20px;
+          margin-bottom: 48px;
+
+          &::after {
+            width: 8px;
+            height: 8px;
+          }
+        }
+      }
+    }
+    .work-footer {
+      display: flex;
+      flex-direction: column;
+      .work-footer__item {
+        margin-bottom: 30px;
+
+        .icon-circle-block {
+          width: 44px;
+          height: 44px;
+          .icon-circle {
+            width: 44px;
+            height: 44px;
+          }
+          .bottom-circle {
+            width: 44px;
+            height: 44px;
+          }
+        }
+
+        p {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+
+  // as part of
+
+  .container {
+    padding: 48px 6.25vw;
+  }
+  .gradient-line {
+    width: 22vw;
+    height: 8px;
+  }
+  .as-part-of h2 {
+    font-size: 42px;
+    margin-bottom: 0;
+  }
+  .exists {
+    flex-direction: column;
+  }
+  .exists--logo {
+    width: 30vw;
+  }
+  .exists--part {
+    margin-top: 25px;
+    width: 87.5vw;
+    max-width: 500px;
+  }
+
+  // rewards
+
+  .rewards-block {
+    margin-top: 48px;
+
+    .show {
+      height: 1781px !important;
+    }
+    .rewards-title {
+      font-size: 24px;
+    }
+    .rewards {
+      margin: 0;
+      padding: 16px 4vw 10px 1.5vw;
+      width: 87.5vw;
+      max-width: 500px;
+      height: 70px;
+      border-radius: 0 12.65px 12.65px 12.65px;
+
+      &__item {
+        width: 27.8vw;
+
+        img {
+          width: 10vw;
+        }
+        p {
+          font-size: 10px;
+        }
+      }
+      &__open-full {
+        margin-top: 18px;
+        margin-right: 3vw;
+
+        img {
+          width: 44px;
+          height: 64px;
+        }
+      }
+
+      .rewards-item p {
+        font-size: 8px;
+      }
+    }
+  }
+
+  // team
+
+  .team-block {
+    .portrait {
+      margin-top: 24px;
+      width: 330px;
+      height: 330px;
+      background: #e6e6e6;
+      img {
+        width: 330px;
+        height: 330px;
+      }
+    }
+    h3 {
+      font-size: 24px;
+    }
+    .text-muted {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    .description {
+      padding-left: 10px;
+
+      h2 {
+        position: absolute;
+        font-size: 24px;
+        margin-bottom: 0;
+        margin-top: -440px;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin-top: 24px;
+        font-size: 14px;
+        width: 84vw;
+        max-width: 443px;
+      }
+
+      .full-btn {
+        svg {
+          margin-right: 15px;
+          position: absolute;
+          right: 20px;
+          width: 10px;
+          height: 15px;
+        }
+        .gradient-line {
+          width: 46px;
+          position: absolute;
+          right: 50px;
+        }
+      }
+    }
+    .temmates-grid-mobile {
+      display: flex;
+    }
+    .teammates {
+      width: 500px;
+      gap: 24px 10px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 27px;
+      .teammate {
+        margin-right: 0;
+        width: 220px;
+        .portrait {
+          width: 220px;
+          height: 220px;
+          margin: 0;
+        }
+        img {
+          width: 220px;
+          height: 220px;
+          margin: 0;
+        }
+
+        h3 {
+          max-width: 42vw;
+          font-size: 16px;
+        }
+        p {
+          max-width: 342px;
+          text-wrap: pretty;
+          font-size: 12px;
+          color: #6c6c6c;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  // top bar block
+
+  .top-bar-block {
+    background: #4766af;
+    height: 28px;
+    width: 100%;
+
+    .container {
+      position: relative;
+      padding: 0;
+      height: 28px;
+
+      .on-top {
+        margin-left: 21px;
+        width: 28vw;
+      }
+
+      .media-buying {
+        margin-left: 38vw;
+        margin-top: -19px;
+        height: 64px;
+        width: 64px;
+      }
+    }
+    .a-refs {
+      margin-right: 16px;
+      display: flex;
+      align-items: center;
+    }
+    a {
+      font-size: 18px;
+      margin-right: 10px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .third-rating-url {
+      display: none;
+    }
+  }
+
+  // footer
+
+  .footer {
+    .container {
+      .links {
+        margin-left: 50px;
+
+        .footer-sections {
+          display: none;
+        }
+        p {
+          align-self: center;
+        }
+        .line {
+          height: 100px;
+        }
+        .common-links {
+          display: flex;
+          flex-wrap: wrap;
+          a {
+            font-size: 16px;
+            margin-right: 16px;
+          }
+        }
+      }
+      .footer-other-info {
+        display: flex;
+        flex-direction: column-reverse;
+        .copyright {
+          margin-top: 30px;
+        }
+        .footer-mobile-email {
+          justify-content: space-between;
+          .emails {
+            display: flex;
+            flex-direction: column;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

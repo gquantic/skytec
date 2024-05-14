@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   body,
   html {
     overflow-x: hidden;
@@ -22,7 +22,7 @@
           text-align: center;
         }
 
-        &:nth-child(2) {
+        &:nth-child(3) {
           text-align: center;
           margin-right: -120px;
         }
@@ -84,7 +84,6 @@
         max-width: 87.5vw;
         font-size: 10px;
       }
-      // TODO: image and mt after h2
     }
     .image-direction {
       justify-content: center !important;

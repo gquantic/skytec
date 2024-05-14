@@ -1,0 +1,107 @@
+@media only screen and (max-width: 1900px) and (min-width: 1200px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  // home
+
+  .home-block {
+    .container {
+      .text {
+        &:nth-child(1) {
+          text-align: left !important;
+        }
+        &:nth-child(2) {
+          margin-right: 0px;
+          text-align: right !important;
+        }
+      }
+    }
+  }
+
+  // work
+
+  .work-block {
+    .work-header {
+      h2 {
+        width: 400px !important;
+      }
+    }
+    .work-body {
+      img {
+        width: 44.5vw;
+      }
+    }
+    .block {
+      padding: 166px 0 0 0;
+      .content {
+        padding: 30px 0 0 50px;
+      }
+      .our-team {
+        img {
+          width: 44.5vw;
+        }
+        .adv {
+          margin-top: 28px;
+          .adv__item {
+            margin-bottom: 18px;
+          }
+        }
+      }
+    }
+    .work-footer {
+      display: flex;
+      flex-direction: column;
+      .work-footer__item {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  // as part of
+
+  .as-part-of {
+    .exists {
+      display: flex;
+      //   flex-direction: column;
+      .exists--logo {
+        width: 24vw;
+      }
+    }
+    .rewards-block {
+      margin-top: 50px;
+    }
+  }
+
+  // team
+
+  .team-block {
+    .description {
+      padding-left: 218px;
+      p {
+        width: 31vw;
+      }
+      .full-btn {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+  .team-block {
+    .teammates {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .top-bar-block {
+    .a-refs {
+      margin-right: -150px;
+    }
+    .third-rating-url {
+      display: none;
+    }
+  }
+}

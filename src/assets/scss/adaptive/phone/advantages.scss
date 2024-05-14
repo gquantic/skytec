@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .advantages-block {
     height: 568px;
     background: url('/src/assets/img/advantages/bg-advantages-mobile.png') no-repeat;
@@ -58,6 +58,9 @@
       margin-right: 5px;
       margin-top: 0;
       margin-bottom: 0;
+    }
+    .third-rating-url {
+      display: none;
     }
   }
 }

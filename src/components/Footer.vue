@@ -4,7 +4,7 @@
       <div class="d-flex justify-content-between align-items-center">
         <img src="/src/assets/img/logo-white.png" alt="" />
         <div class="links d-flex">
-          <p v-if="width > 600">Разделы</p>
+          <p class="footer-sections">Разделы</p>
           <div class="line"></div>
           <div class="common-links">
             <a href="">Главная</a>
@@ -44,7 +44,3 @@
     </div>
   </footer>
 </template>
-
-<script setup>
-const width = window.innerWidth > 0 ? window.innerWidth : screen.width
-</script>

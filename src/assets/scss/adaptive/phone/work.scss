@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .work-block {
     padding: 0;
     .container {
@@ -41,7 +41,12 @@
             }
           }
         }
+        .work-image-laptop {
+          display: none;
+        }
+
         .work-image-mobile {
+          display: block;
           height: auto;
           width: 58.75vw;
         }
@@ -54,6 +59,16 @@
         justify-content: space-between;
         border: 1px solid #6c6c6c;
         border-top: none;
+
+        .gradient-line-work {
+          display: block;
+          width: 165px;
+          height: 20px;
+          position: absolute;
+          rotate: 90deg;
+          margin-top: 90px;
+          margin-left: -60px;
+        }
 
         &__item {
           display: flex;
@@ -99,6 +114,13 @@
       }
 
       .block {
+        .second-img-work-laptop {
+          display: none;
+        }
+        .second-img-work-min {
+          display: block;
+        }
+
         padding: 0;
         .content {
           padding: 25px 6.25vw 20px 4.38vw;

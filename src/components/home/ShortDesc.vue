@@ -45,7 +45,7 @@
     }
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 770px) {
   .short-desc-block {
     height: 568px;
     background: url(/src/assets/img/short-desc/bg-mobile.png) no-repeat;

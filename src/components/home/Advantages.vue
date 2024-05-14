@@ -7,9 +7,8 @@
       </div>
       <div class="line"></div>
       <div class="item width-item">
-        <div v-if="width < 600" class="gradient-line gradient-line-mobile"></div>
+        <div class="gradient-line gradient-line-mobile"></div>
         <p>Многолетний опыт работы с крупнейшими российскими и международными клиентами.</p>
-        <div v-if="width > 600" class="gradient-line"></div>
       </div>
       <div class="line"></div>
       <div class="item">
@@ -25,11 +24,8 @@
       <div class="a-refs">
         <a href="">adindex.ru</a>
         <a href="">sostav.ru</a>
-        <a href="" v-if="width > 1400">adindex.ru/ratings/</a>
+        <a href="" class="third-rating-url">adindex.ru/ratings/</a>
       </div>
     </div>
   </div>
 </template>
-<script setup lang="ts">
-const width = window.innerWidth > 0 ? window.innerWidth : screen.width
-</script>
