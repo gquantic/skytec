@@ -1,0 +1,121 @@
+@media only screen and (max-width: 500px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  .page-about-us {
+    .about-us-block {
+      height: max-content;
+      padding: 105px 9.07vw 48px 5.33vw;
+      .who-we-are {
+        flex-direction: column;
+        .description {
+          width: 81.25vw;
+          h1 {
+            font-size: 24px;
+          }
+          p {
+            font-size: 12px;
+          }
+          .hr-none {
+            height: 16px;
+          }
+        }
+        .about-us-img {
+          display: none;
+        }
+        .about-us-img-mobile {
+          display: block;
+          margin-top: 48px;
+          width: 48.8vw;
+          height: 121px;
+        }
+      }
+      .our-office {
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 305px;
+        margin-top: 24px;
+        .first-img {
+          width: 66.93vw;
+          height: 147px;
+          align-self: center;
+        }
+        .second-img {
+          width: 50.67vw;
+          height: 135px;
+        }
+      }
+      .our-office-text {
+        margin-top: -40px;
+        left: 24.5%;
+        width: 35.47vw;
+        min-width: 0;
+
+        h2 {
+          font-size: 24px;
+        }
+      }
+    }
+    .middle-block {
+      background: url('/src/assets/img/about-us/background-mobile.png') no-repeat;
+      background-size: 100vw 100vh;
+      height: max-content;
+      padding: 418px 5.33vw 72px 5.33vw;
+
+      h3 {
+        font-size: 20px;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+    }
+
+    .our-workers {
+      height: 432px;
+      padding: 48px 5.07vw;
+      h3 {
+        font-size: 24px;
+        width: 66.67vw;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      .advantages-block-workers {
+        .advantage {
+          font-size: 12px;
+          height: 85px;
+          display: flex;
+          align-items: center;
+          cursor: default;
+
+          .number {
+            margin-right: 15.47vw;
+            font-size: 20px;
+            color: #4766af;
+          }
+
+          .advantage-header {
+            text-transform: uppercase;
+            font-size: 12px;
+            color: #4766af;
+            margin-bottom: 8px;
+            margin-top: 16px;
+          }
+          .advantage-hover {
+            display: block;
+            font-size: 10px;
+            width: 51.2vw;
+            margin-bottom: 16px;
+          }
+        }
+
+        .divider {
+          width: 100vw;
+          position: absolute;
+          left: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

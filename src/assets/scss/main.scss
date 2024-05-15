@@ -12,6 +12,7 @@
 @import 'blocks/team';
 @import 'blocks/work';
 @import 'blocks/footer';
+@import 'blocks/about-us';
 
 /** OTHER **/
 
@@ -107,8 +108,12 @@ body {
 @import 'adaptive/phone/team';
 @import 'adaptive/phone/work';
 
+@import 'adaptive/phone/about-us';
+
 // Adaptive tablet and laptops
 
 @import 'adaptive/tablet/highres';
 @import 'adaptive/tablet/middleres';
 @import 'adaptive/tablet/lowres';
+
+@import 'adaptive/tablet/about-us';

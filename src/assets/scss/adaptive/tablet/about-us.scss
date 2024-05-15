@@ -1,0 +1,288 @@
+@media only screen and (max-width: 1770px) and (min-width: 1600px) {
+  .page-about-us {
+    .about-us-block {
+      .our-office-text {
+        left: 34.3vw;
+        width: 22vw;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1600px) and (min-width: 1440px) {
+  .page-about-us {
+    .about-us-block {
+      .our-office-text {
+        left: 33vw;
+        width: 24vw;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 830px) {
+  .page-about-us {
+    .about-us-block {
+      height: 1500px;
+      .who-we-are {
+        .description {
+          .hr-none {
+            height: 24px;
+          }
+        }
+      }
+      .our-office {
+        margin-top: 48px;
+        height: 580px;
+      }
+      .our-office-text {
+        margin-top: -200px;
+        left: 34vw;
+        width: 22vw;
+        h2 {
+          font-size: 56px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) and (min-width: 830px) {
+  .page-about-us {
+    .about-us-block {
+      height: 1230px;
+      .who-we-are {
+        .description {
+          h1 {
+            font-size: 48px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+      .our-office {
+        margin-top: 48px;
+        height: 480px;
+      }
+      .our-office-text {
+        margin-top: -150px;
+        left: 33vw;
+        width: 23vw;
+        h2 {
+          font-size: 56px;
+        }
+      }
+    }
+    .our-workers {
+      h3 {
+        font-size: 32px;
+        width: 34vw;
+      }
+      .advantages-block-workers {
+        .advantage {
+          .number {
+            font-size: 32px;
+            color: #4766af;
+          }
+          .advantage-header {
+            font-size: 32px;
+            color: #4766af;
+          }
+          .advantage-hover {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1180px) and (min-width: 830px) {
+  .page-about-us {
+    .about-us-block {
+      .our-office-text {
+        left: 31vw;
+        width: 28.5vw;
+        h2 {
+          font-size: 56px;
+        }
+      }
+    }
+    .middle-block {
+      h3 {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 830px) {
+  .page-about-us {
+    .about-us-block {
+      .who-we-are {
+        .description {
+          h1 {
+            font-size: 32px;
+          }
+        }
+        img {
+          height: 250px;
+        }
+      }
+      .our-office-text {
+        left: 28.5vw;
+        width: 33vw;
+        h2 {
+          font-size: 56px;
+        }
+      }
+    }
+    .our-workers {
+      padding: 104px 12.5vw;
+      height: 1000px;
+      h3 {
+        width: 40vw;
+      }
+      .advantages-block-workers {
+        .advantage {
+          .advantage-header {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 830px) and (min-width: 500px) {
+  .page-about-us {
+    .about-us-block {
+      height: max-content;
+      padding: 135px 9.07vw 48px 5.33vw;
+      .who-we-are {
+        flex-direction: column;
+        .description {
+          width: 81.25vw;
+          h1 {
+            font-size: 32px;
+          }
+          p {
+            font-size: 16px;
+          }
+          .hr-none {
+            height: 24px;
+          }
+        }
+
+        .about-us-img {
+          margin-top: 48px;
+          width: 48.8vw;
+        }
+      }
+      .our-office {
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 520px;
+        margin-top: 24px;
+        .first-img {
+          width: 60vw;
+          height: 250px;
+          align-self: center;
+        }
+        .second-img {
+          width: 56.67vw;
+          height: 250px;
+        }
+      }
+      .our-office-text {
+        margin-top: -67px;
+        left: 23.5%;
+        width: 24vw;
+        min-width: 0;
+
+        h2 {
+          font-size: 32px;
+        }
+      }
+    }
+    .middle-block {
+      h3 {
+        width: 74vw;
+        font-size: 32px;
+      }
+    }
+
+    .our-workers {
+      padding: 104px 12.5vw;
+      height: 1000px;
+      h3 {
+        font-size: 32px;
+        width: 66vw;
+      }
+      .advantages-block-workers {
+        .advantage {
+          .number {
+            font-size: 32px;
+            color: #4766af;
+            margin-right: 11vw;
+          }
+
+          .advantage-header {
+            font-size: 26px;
+            color: #4766af;
+          }
+          .advantage-hover {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 750px) and (min-width: 650px) {
+  .page-about-us {
+    .about-us-block {
+      .our-office-text {
+        left: 21.5vw;
+        width: 28vw;
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) and (min-width: 500px) {
+  .page-about-us {
+    .about-us-block {
+      .who-we-are {
+        .about-us-img {
+          height: 190px;
+        }
+      }
+      .our-office {
+        height: 420px;
+        .first-img {
+          height: 200px;
+        }
+        .second-img {
+          height: 200px;
+        }
+      }
+      .our-office-text {
+        left: 19vw;
+        width: 32vw;
+      }
+    }
+    .our-workers {
+      .advantages-block-workers {
+        .advantage {
+          .number {
+            margin-right: 11vw;
+          }
+          .advantage-header {
+            font-size: 22px;
+          }
+          .advantage-hover {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
