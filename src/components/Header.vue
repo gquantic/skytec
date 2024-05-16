@@ -3,18 +3,22 @@
     <div class="regular-header" id="burger-header">
       <div class="header-sections">
         <div class="upper-header">
-          <img :src="logo" alt="" @click="resetBurger()" />
+          <img :src="logo" alt="" @click="toMainPage()" class="white-logo" />
+          <img :src="blackLogo" alt="" @click="toMainPage()" class="black-logo" />
+
           <div class="header-other-links">
             <div class="header-theme-change">
               <a href="javascript:void(0);" @click="setTheme('light')">
-                <img :src="icon_sun" alt="" />
+                <img :src="icon_sun" alt="" class="white-sun" />
+                <img :src="icon_sun_black" alt="" class="black-sun" />
               </a>
               <div class="line"></div>
               <a href="javascript:void(0);" @click="setTheme('dark')">
-                <img :src="icon_moon" alt="" />
+                <img :src="icon_moon" alt="" class="white-moon" />
+                <img :src="icon_moon_black" alt="" class="black-moon" />
               </a>
             </div>
-            <div class="contact">
+            <div class="link-open contact">
               <p>Связаться</p>
               <div class="arrow"></div>
             </div>
@@ -32,7 +36,7 @@
             <IconCircle icon="/src/assets/icons/marker-02.svg" />
           </div>
           <div class="directions">
-            <div class="one-direction first-direction" @click="resetBurger()">
+            <div class="one-direction first-direction" @click="toAboutUsPage">
               <div class="number">
                 <h2>01</h2>
               </div>
@@ -94,6 +98,7 @@
 
 <style lang="scss">
 .header-container {
+  z-index: 5;
   width: 100vw;
   padding: 0 12.5vw;
   .regular-header {
@@ -102,6 +107,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .black-logo {
+          display: none;
+        }
         .header-other-links {
           height: 100px;
           width: 300px;
@@ -112,10 +120,16 @@
             display: flex;
             width: 100px;
             justify-content: space-between;
+            .black-moon {
+              display: none;
+            }
+            .black-sun {
+              display: none;
+            }
             .line {
-              height: 40px;
+              height: 26px;
               width: 2px;
-              background-color: black;
+              background-color: white;
             }
           }
           .contact {
@@ -132,19 +146,51 @@
     }
   }
   .extended-header {
-    height: 970px;
-    background-color: #fff;
-    position: absolute;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
     left: 0;
     width: 100vw;
     padding: 0 12.5vw;
     .header-sections {
       .upper-header {
-        .logologologochangelogologolog {
+        .white-logo {
+          display: none;
+        }
+        .black-logo {
+          display: block;
         }
 
         .header-other-links {
           width: 27vw;
+          .header-theme-change {
+            display: flex !important;
+            .black-moon {
+              display: block;
+            }
+            .white-moon {
+              display: none;
+            }
+            .black-sun {
+              display: block;
+            }
+            .white-sun {
+              display: none;
+            }
+            .line {
+              height: 26px;
+              width: 2px;
+              background-color: black;
+            }
+          }
+          .link-open {
+            color: #000;
+            &::after {
+              background: #000;
+              width: 20px;
+              height: 12px;
+            }
+          }
           .contact {
             display: flex;
             align-items: center;
@@ -152,10 +198,12 @@
             width: 9.95vw;
             height: 51px;
             border: 1px solid #000;
+
             p {
               text-align: center;
               margin: 0;
               font-size: 18px;
+              margin-right: 4px;
             }
           }
           .burger-sign {
@@ -251,8 +299,9 @@
     }
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .header-container {
+    padding: 0 6.25vw;
     .regular-header {
       .header-sections {
         .upper-header {
@@ -266,13 +315,15 @@
       }
     }
     .extended-header {
-      padding: 6.25vw;
+      padding: 0 6.25vw;
       height: 100vh;
       .header-sections {
         .upper-header {
           .header-other-links {
+            justify-content: space-between;
             .header-theme-change {
-              display: block;
+              display: flex;
+              width: 80px;
             }
             .contact {
               display: none !important;
@@ -328,26 +379,163 @@
     }
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  .header-container {
+    .extended-header {
+      .header-sections {
+        .bottom-header {
+          .directions {
+            .one-direction {
+              .number {
+                h2 {
+                  font-size: 36px;
+                }
+              }
+              .theme {
+                h1 {
+                  font-size: 36px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .header-container {
+    .extended-header {
+      .header-sections {
+        .upper-header {
+          .header-other-links {
+            width: 40vw;
+          }
+        }
+        .bottom-header {
+          .directions {
+            .one-direction {
+              .number {
+                h2 {
+                  font-size: 24px;
+                }
+              }
+              .theme {
+                h1 {
+                  font-size: 24px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .header-container {
+    .extended-header {
+      .header-sections {
+        .upper-header {
+          .header-other-links {
+            .contact {
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        .bottom-header {
+          .directions {
+            .one-direction {
+              .number {
+                h2 {
+                  font-size: 24px;
+                }
+              }
+              .theme {
+                h1 {
+                  font-size: 24px;
+                }
+              }
+            }
+          }
+          .photos {
+            .circle-buttons {
+              display: flex;
+              position: absolute;
+              margin-left: 25.5vw;
+              margin-top: 40px;
+              .icon-circle-block {
+                width: 34px;
+                height: 34px;
+                .icon-circle {
+                  width: 34px;
+                  height: 34px;
+                  svg {
+                    width: 16px;
+                    height: 16px;
+                  }
+                }
+                .bottom-circle {
+                  width: 34px;
+                  height: 34px;
+                  margin-left: 4px;
+                  margin-top: 2px;
+                  z-index: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 </style>
 
 <script setup lang="ts">
 import logo from '@/assets/img/logo.png'
+import blackLogo from '@/assets/img/logo-black.png'
 import icon_sun from '@/assets/icons/sun.svg'
+import icon_sun_black from '@/assets/icons/sun-black.svg'
 import icon_moon from '@/assets/icons/moon.svg'
+import icon_moon_black from '@/assets/icons/moon-black.svg'
 import icon_burger_menu from '@/assets/icons/burger-menu.svg'
 import icon_x from '@/assets/icons/burger_x_sign.svg'
 import IconCircle from '@/components/icons/IconCircle.vue'
+import router from '@/router'
 
 function burgerHeader() {
-  if (document.getElementById('burger-header')?.className == 'regular-header') {
-    document.getElementById('burger-header').className += ' extended-header'
+  const headerElement = document.getElementById('burger-header')
+  if (headerElement) {
+    if (headerElement.className === 'regular-header') {
+      headerElement.className += ' extended-header'
+    } else {
+      headerElement.className = 'regular-header'
+    }
   } else {
-    document.getElementById('burger-header').className = 'regular-header'
+    console.error('Element with ID "burger-header" not found.')
   }
 }
 
 function resetBurger() {
-  document.getElementById('burger-header').className = 'regular-header'
+  const headerElement = document.getElementById('burger-header')
+  if (headerElement) {
+    headerElement.className = 'regular-header'
+  }
+}
+
+function toAboutUsPage() {
+  router.push('/about')
+  resetBurger()
+}
+
+function toMainPage() {
+  router.push('/')
+  resetBurger
 }
 
 function setTheme(theme: string) {
