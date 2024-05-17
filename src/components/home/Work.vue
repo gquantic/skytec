@@ -4,7 +4,9 @@
       <div class="work">
         <div class="work-header">
           <h2>Заинтересованы в сотрудничестве?</h2>
-          <a href="" class="link-open"> Напишите нам </a>
+          <router-link to="/contacts" @click="scrollToTop()" class="link-open">
+            Напишите нам
+          </router-link>
         </div>
         <template v-if="!short">
           <div class="work-body d-flex align-items-center justify-content-between">
@@ -161,4 +163,8 @@ const props = defineProps({
     default: false
   }
 })
+
+function scrollToTop() {
+  window.scrollTo(0, 0)
+}
 </script>

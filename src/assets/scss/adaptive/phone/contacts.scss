@@ -1,0 +1,71 @@
+@media only screen and (max-width: 500px) {
+  .contacts-page {
+    background: url('/src/assets/img/contacts/bg-mobile.png') no-repeat;
+    background-size: 100vw 667px;
+    .upper-block {
+      flex-direction: column;
+      padding: 232px 6.25vw 105px 6.25vw;
+      height: 667px;
+      .little-note {
+        color: #fff;
+        h1 {
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+        p {
+          margin-top: 16px;
+          font-size: 12px;
+          max-width: 77.5vw;
+        }
+      }
+      .circles {
+        margin-left: 0;
+        .circle-item {
+          width: 90px;
+          height: 90px;
+          margin-left: 6.25vw;
+          .front {
+            width: 90px;
+            height: 90px;
+            font-size: 10px;
+          }
+          .back {
+            width: 90px;
+            height: 90px;
+            margin-left: 5px;
+          }
+        }
+        .second-circle {
+          margin-left: 17.5vw;
+        }
+      }
+    }
+    .bottom-block {
+      padding: 48px 32vw 58px 6.25vw;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        font-size: 24px;
+      }
+      .other-contacts {
+        margin-left: 0;
+        margin-top: 0;
+
+        .one-contact {
+          margin-top: 24px;
+          margin-bottom: 0;
+          flex-direction: column;
+          align-items: flex-start;
+          height: auto;
+          width: 69vw;
+          h3 {
+            font-size: 16px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

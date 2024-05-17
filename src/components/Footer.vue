@@ -1,17 +1,18 @@
+import { RouterLink } from 'vue-router';
 <template>
   <footer class="footer">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
         <img src="/src/assets/img/logo-white.png" alt="" />
         <div class="links d-flex">
-          <p class="footer-sections">Разделы</p>
+          <p class="footer-sections" style="font-weight: 500">Разделы</p>
           <div class="line"></div>
           <div class="common-links">
-            <a href="">Главная</a>
+            <router-link to="/" @click="scrollToTop">Главная</router-link>
             <a href="">Команда</a>
             <a href="">Направления</a>
-            <a href="">Кто мы</a>
-            <a href="">Контакты</a>
+            <router-link to="/about" @click="scrollToTop">Кто мы</router-link>
+            <router-link to="/contacts" @click="scrollToTop">Контакты</router-link>
             <a href="">Обсудить проект</a>
           </div>
         </div>
@@ -44,3 +45,9 @@
     </div>
   </footer>
 </template>
+
+<script setup lang="ts">
+function scrollToTop() {
+  window.scrollTo(0, 0)
+}
+</script>

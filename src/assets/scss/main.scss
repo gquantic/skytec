@@ -7,6 +7,8 @@
 
 /** BLOCKS AND PAGES **/
 
+@import 'blocks/header';
+@import 'blocks/contacts';
 @import 'blocks/aspartof';
 @import 'blocks/advantages';
 @import 'blocks/team';
@@ -109,11 +111,15 @@ body {
 @import 'adaptive/phone/work';
 
 @import 'adaptive/phone/about-us';
+@import 'adaptive/phone/header';
+@import 'adaptive/phone/contacts';
 
 // Adaptive tablet and laptops
 
-@import 'adaptive/tablet/highres';
-@import 'adaptive/tablet/middleres';
-@import 'adaptive/tablet/lowres';
+@import 'adaptive/tablet/home-page/highres';
+@import 'adaptive/tablet/home-page/middleres';
+@import 'adaptive/tablet/home-page/lowres';
 
 @import 'adaptive/tablet/about-us';
+@import 'adaptive/tablet/header';
+@import 'adaptive/tablet/contacts';

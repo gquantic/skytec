@@ -1,0 +1,169 @@
+@media only screen and (max-width: 1350px) and (min-width: 1200px) {
+  .contacts-page {
+    .bottom-block {
+      h2 {
+        font-size: 56px;
+      }
+      .other-contacts {
+        margin-left: 10vw;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 950px) {
+  .contacts-page {
+    .upper-block {
+      .circles {
+        margin-left: 9vw;
+        .circle-item {
+          width: 140px;
+          height: 140px;
+          .front {
+            width: 140px;
+            height: 140px;
+            font-size: 16px;
+          }
+          .back {
+            width: 140px;
+            height: 140px;
+          }
+        }
+      }
+    }
+    .bottom-block {
+      padding: 208px 12.56vw 208px 12.5vw;
+      h2 {
+        font-size: 42px;
+      }
+      .other-contacts {
+        margin-left: 10vw;
+        .one-contact {
+          width: 45vw;
+          p {
+            min-width: 27vw;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 750px) {
+  .contacts-page {
+    .upper-block {
+      .little-note {
+        h1 {
+          font-size: 42px;
+        }
+      }
+      .circles {
+        margin-left: 9vw;
+        .circle-item {
+          width: 140px;
+          height: 140px;
+          .front {
+            width: 140px;
+            height: 140px;
+            font-size: 16px;
+          }
+          .back {
+            width: 140px;
+            height: 140px;
+          }
+        }
+      }
+    }
+    .bottom-block {
+      padding: 104px 12.56vw 104px 12.5vw;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        font-size: 42px;
+      }
+      .other-contacts {
+        margin-left: 0;
+        margin-top: 60px;
+        .one-contact {
+          width: 69vw;
+          p {
+            min-width: 37vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 500px) {
+  .contacts-page {
+    background: url('/src/assets/img/contacts/bg-mobile.png') no-repeat;
+    background-size: 100%;
+    .upper-block {
+      flex-direction: column;
+      .little-note {
+        color: #fff;
+        h1 {
+          font-size: 48px;
+          text-transform: uppercase;
+        }
+        p {
+          margin-top: 16px;
+          font-size: 20px;
+          max-width: 77.5vw;
+        }
+      }
+      .circles {
+        margin-left: 0;
+        .circle-item {
+          width: 140px;
+          height: 140px;
+          .front {
+            width: 140px;
+            height: 140px;
+            font-size: 16px;
+          }
+          .back {
+            width: 140px;
+            height: 140px;
+          }
+        }
+        .second-circle {
+          margin-left: 17.5vw;
+        }
+      }
+    }
+    .bottom-block {
+      padding: 104px 12.56vw 104px 12.5vw;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        font-size: 42px;
+      }
+      .other-contacts {
+        margin-left: 0;
+        margin-top: 60px;
+        .one-contact {
+          width: 69vw;
+          p {
+            min-width: 37vw;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 650px) and (min-width: 500px) {
+  .contacts-page {
+    .upper-block {
+      padding: 279px 19.32vw 462px 14.22vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) and (min-width: 500px) {
+  .contacts-page {
+    .upper-block {
+      padding: 232px 6.25vw 105px 6.25vw;
+      height: 872px;
+    }
+  }
+}

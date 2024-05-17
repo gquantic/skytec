@@ -18,7 +18,8 @@
                 <img v-if="headerIconTheme == 'black'" :src="icon_sun" alt="" class="white-sun" />
                 <img v-else :src="icon_sun_black" alt="" class="black-sun" />
               </a>
-              <div class="line"></div>
+              <div v-if="headerIconTheme == 'black'" class="line-white"></div>
+              <div v-else class="line-black"></div>
               <a href="javascript:void(0);" @click="setTheme('dark')">
                 <img v-if="headerIconTheme == 'black'" :src="icon_moon" alt="" class="white-moon" />
                 <img v-else :src="icon_moon_black" alt="" class="black-moon" />
@@ -107,411 +108,6 @@
   </header>
 </template>
 
-<style lang="scss">
-.header-container {
-  z-index: 5;
-  width: 100vw;
-  padding: 0 12.5vw;
-  .regular-header {
-    .header-sections {
-      .upper-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .white-logo {
-          display: block;
-          cursor: pointer;
-        }
-        .black-logo {
-          display: block;
-        }
-        .header-other-links {
-          height: 100px;
-          width: 300px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          .header-theme-change {
-            display: flex;
-            width: 100px;
-            justify-content: space-between;
-            .black-moon {
-              display: block;
-            }
-            .black-sun {
-              display: block;
-            }
-            .line {
-              height: 26px;
-              width: 2px;
-              background-color: white;
-            }
-          }
-          .contact {
-            display: none;
-          }
-          .x-sign {
-            display: none;
-          }
-        }
-      }
-      .bottom-header {
-        display: none;
-      }
-    }
-  }
-  .extended-header {
-    height: 100vh;
-    background: #fff;
-    position: fixed;
-    left: 0;
-    width: 100vw;
-    padding: 0 12.5vw;
-    .header-sections {
-      .upper-header {
-        .white-logo {
-          display: block;
-        }
-        .black-logo {
-          display: block;
-          cursor: pointer;
-        }
-
-        .header-other-links {
-          width: 27vw;
-          .header-theme-change {
-            display: flex !important;
-            .black-moon {
-              display: block;
-            }
-            .white-moon {
-              display: block;
-            }
-            .black-sun {
-              display: block;
-            }
-            .white-sun {
-              display: block;
-            }
-            .line {
-              height: 26px;
-              width: 2px;
-              background-color: black;
-            }
-          }
-          .link-open {
-            color: #000;
-            &::after {
-              background: #000;
-              width: 20px;
-              height: 12px;
-            }
-          }
-          .contact {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 9.95vw;
-            height: 51px;
-            border: 1px solid #000;
-
-            p {
-              text-align: center;
-              margin: 0;
-              font-size: 18px;
-              margin-right: 4px;
-            }
-          }
-          .burger-sign {
-            display: none;
-          }
-          .x-sign {
-            display: block;
-          }
-        }
-      }
-      .bottom-header {
-        display: flex;
-        margin-top: 189px;
-        .mobile-circles {
-          display: none;
-        }
-        .directions {
-          width: 29.1vw;
-          display: flex;
-          flex-direction: column;
-          .first-direction {
-            margin-top: 0 !important;
-          }
-          .one-direction {
-            margin-top: 40px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            .theme {
-              font-size: 48px;
-              text-transform: uppercase;
-              margin-left: 3.3vw;
-            }
-            .number {
-              h2 {
-                font-weight: 600;
-                font-size: 48px;
-                transition: 0.2s;
-              }
-            }
-          }
-          :hover {
-            .number {
-              h2 {
-                color: #4768b0;
-              }
-            }
-          }
-          .gradient-line {
-            align-self: flex-end;
-          }
-        }
-        .photos {
-          display: flex;
-          .common-photos {
-            display: flex;
-            justify-content: space-between;
-            width: 43.23vw;
-            .first-img {
-              width: 24vw;
-              position: absolute;
-            }
-            .second-img {
-              width: 24vw;
-              position: absolute;
-              margin-left: 19.11vw;
-              margin-top: 151px;
-            }
-          }
-          .circle-buttons {
-            display: flex;
-            position: absolute;
-            margin-left: 25.5vw;
-            margin-top: 40px;
-            .icon-circle-block {
-              width: 68px;
-              height: 68px;
-              .icon-circle {
-                width: 68px;
-                height: 68px;
-              }
-              .bottom-circle {
-                width: 68px;
-                height: 68px;
-                margin-left: 4px;
-                margin-top: 2px;
-                z-index: 0;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 600px) {
-  .header-container {
-    padding: 0 6.25vw;
-    .regular-header {
-      .header-sections {
-        .upper-header {
-          .header-other-links {
-            justify-content: flex-end;
-            .header-theme-change {
-              display: none;
-            }
-          }
-        }
-      }
-    }
-    .extended-header {
-      padding: 0 6.25vw;
-      height: 100vh;
-      .header-sections {
-        .upper-header {
-          .header-other-links {
-            justify-content: space-between;
-            .header-theme-change {
-              display: flex;
-              width: 80px;
-            }
-            .contact {
-              display: none !important;
-            }
-          }
-        }
-        .bottom-header {
-          margin-top: 24px;
-          flex-direction: column;
-          .mobile-circles {
-            display: flex;
-            .icon-circle-block {
-              width: 40px;
-              height: 40px;
-              .icon-circle {
-                width: 40px;
-                height: 40px;
-                svg {
-                  width: 14px;
-                  height: 14px;
-                }
-              }
-              .bottom-circle {
-                z-index: 0;
-                width: 40px;
-                height: 40px;
-                margin-left: 2px;
-              }
-            }
-          }
-          .directions {
-            width: 74.6vw;
-            margin-top: 48px;
-            .one-direction {
-              .number {
-                h2 {
-                  font-size: 20px;
-                }
-              }
-              .theme {
-                margin-left: 10vw;
-                h1 {
-                  font-size: 20px;
-                }
-              }
-            }
-          }
-          .photos {
-            display: none;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .header-container {
-    .extended-header {
-      .header-sections {
-        .bottom-header {
-          .directions {
-            .one-direction {
-              .number {
-                h2 {
-                  font-size: 36px;
-                }
-              }
-              .theme {
-                h1 {
-                  font-size: 36px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .header-container {
-    .extended-header {
-      .header-sections {
-        .upper-header {
-          .header-other-links {
-            width: 40vw;
-          }
-        }
-        .bottom-header {
-          .directions {
-            .one-direction {
-              .number {
-                h2 {
-                  font-size: 24px;
-                }
-              }
-              .theme {
-                h1 {
-                  font-size: 24px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  .header-container {
-    .extended-header {
-      .header-sections {
-        .upper-header {
-          .header-other-links {
-            .contact {
-              p {
-                font-size: 12px;
-              }
-            }
-          }
-        }
-        .bottom-header {
-          .directions {
-            .one-direction {
-              .number {
-                h2 {
-                  font-size: 24px;
-                }
-              }
-              .theme {
-                h1 {
-                  font-size: 24px;
-                }
-              }
-            }
-          }
-          .photos {
-            .circle-buttons {
-              display: flex;
-              position: absolute;
-              margin-left: 25.5vw;
-              margin-top: 40px;
-              .icon-circle-block {
-                width: 34px;
-                height: 34px;
-                .icon-circle {
-                  width: 34px;
-                  height: 34px;
-                  svg {
-                    width: 16px;
-                    height: 16px;
-                  }
-                }
-                .bottom-circle {
-                  width: 34px;
-                  height: 34px;
-                  margin-left: 4px;
-                  margin-top: 2px;
-                  z-index: 0;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-</style>
-
 <script setup lang="ts">
 import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
@@ -527,13 +123,15 @@ import icon_x from '@/assets/icons/burger_x_sign.svg'
 import IconCircle from '@/components/icons/IconCircle.vue'
 import router from '@/router'
 
-let headerIconTheme = ref('black')
+const headerIconTheme = ref('black')
+const route = useRoute()
+const currentPath = ref(route.path)
 
 function burgerHeader() {
   const headerElement = document.getElementById('burger-header')
   if (headerElement) {
-    if (headerElement.className === 'regular-header') {
-      headerElement.className += ' extended-header'
+    if (!headerElement.classList.contains('extended-header')) {
+      headerElement.classList!.add('extended-header')
       headerIconTheme.value = 'white'
     } else {
       resetBurger()
@@ -553,8 +151,6 @@ function resetBurger() {
     headerElement.className = 'regular-header'
   }
 }
-const route = useRoute()
-const currentPath = ref(route.path)
 
 watch(
   () => route.path,
@@ -571,7 +167,6 @@ watch(
 function toAboutUsPage() {
   router.push('/about')
   resetBurger()
-  currentPath.value = 'white'
 }
 
 function toContactsPage() {

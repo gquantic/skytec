@@ -1,0 +1,114 @@
+@media only screen and (max-width: 1200px) {
+  .header-container {
+    .extended-header {
+      .header-sections {
+        .bottom-header {
+          .directions {
+            .one-direction {
+              .number {
+                h2 {
+                  font-size: 36px;
+                }
+              }
+              .theme {
+                h1 {
+                  font-size: 36px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .header-container {
+    .extended-header {
+      .header-sections {
+        .upper-header {
+          .header-other-links {
+            width: 40vw;
+          }
+        }
+        .bottom-header {
+          .directions {
+            .one-direction {
+              .number {
+                h2 {
+                  font-size: 24px;
+                }
+              }
+              .theme {
+                h1 {
+                  font-size: 24px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .header-container {
+    .extended-header {
+      .header-sections {
+        .upper-header {
+          .header-other-links {
+            .contact {
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        .bottom-header {
+          .directions {
+            .one-direction {
+              .number {
+                h2 {
+                  font-size: 24px;
+                }
+              }
+              .theme {
+                h1 {
+                  font-size: 24px;
+                }
+              }
+            }
+          }
+          .photos {
+            .circle-buttons {
+              display: flex;
+              position: absolute;
+              margin-left: 25.5vw;
+              margin-top: 40px;
+              .icon-circle-block {
+                width: 34px;
+                height: 34px;
+                .icon-circle {
+                  width: 34px;
+                  height: 34px;
+                  svg {
+                    width: 16px;
+                    height: 16px;
+                  }
+                }
+                .bottom-circle {
+                  width: 34px;
+                  height: 34px;
+                  margin-left: 4px;
+                  margin-top: 2px;
+                  z-index: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
