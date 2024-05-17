@@ -104,4 +104,13 @@
       display: none;
     }
   }
+  .rewards-block {
+    .rewards {
+      .content {
+        hr {
+          margin-top: 0;
+        }
+      }
+    }
+  }
 }

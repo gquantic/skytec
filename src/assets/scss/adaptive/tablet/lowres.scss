@@ -241,12 +241,11 @@
 
       &__item {
         width: 27.8vw;
-
-        img {
-          width: 10vw;
-        }
         p {
           font-size: 10px;
+        }
+        img {
+          width: 10vw;
         }
       }
       &__open-full {
@@ -261,6 +260,15 @@
 
       .rewards-item p {
         font-size: 8px;
+      }
+    }
+    .show {
+      .content {
+        .rewards__item {
+          p {
+            font-size: 12px;
+          }
+        }
       }
     }
   }
