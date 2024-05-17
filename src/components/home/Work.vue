@@ -18,14 +18,14 @@
           <div class="work-footer">
             <div class="gradient-line gradient-line-work"></div>
             <div class="work-footer__item">
-              <IconCircle icon="/src/assets/icons/phone.svg" />
+              <IconCircle icon="/icons/phone.svg" />
               <div>
                 <p class="mb-0">Телефон</p>
                 <p class="text-muted">8 495 660-47-47</p>
               </div>
             </div>
             <div class="work-footer__item">
-              <IconCircle icon="/src/assets/icons/email.svg" classes="fill" />
+              <IconCircle icon="/icons/email.svg" classes="fill" />
               <div>
                 <p class="mb-0">E-mail</p>
                 <p class="text-muted">
@@ -35,7 +35,7 @@
               </div>
             </div>
             <div class="work-footer__item">
-              <IconCircle icon="/src/assets/icons/marker-02.svg" />
+              <IconCircle icon="/icons/marker-02.svg" />
               <div>
                 <p class="mb-0">Адрес</p>
                 <p class="text-muted">

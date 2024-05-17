@@ -30,9 +30,9 @@
         </div>
         <div class="bottom-header">
           <div class="mobile-circles">
-            <IconCircle icon="/src/assets/icons/phone.svg" />
-            <IconCircle icon="/src/assets/icons/email.svg" classes="fill" />
-            <IconCircle icon="/src/assets/icons/marker-02.svg" />
+            <IconCircle icon="/icons/phone.svg" />
+            <IconCircle icon="/icons/email.svg" classes="fill" />
+            <IconCircle icon="/icons/marker-02.svg" />
           </div>
           <div class="directions">
             <div class="one-direction first-direction" @click="toAboutUsPage">
@@ -84,9 +84,9 @@
             </div>
 
             <div class="circle-buttons">
-              <IconCircle icon="/src/assets/icons/phone.svg" />
-              <IconCircle icon="/src/assets/icons/email.svg" classes="fill" />
-              <IconCircle icon="/src/assets/icons/marker-02.svg" />
+              <IconCircle icon="/icons/phone.svg" />
+              <IconCircle icon="/icons/email.svg" classes="fill" />
+              <IconCircle icon="/icons/marker-02.svg" />
             </div>
           </div>
         </div>

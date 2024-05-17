@@ -4,10 +4,10 @@
       <div>
         <div class="gradient-line"></div>
         <h2>В составе</h2>
-        <object class="exists--logo" data="/src/assets/img/logo.svg" type="image/svg+xml"></object>
+        <object class="exists--logo" data="/img/logo.svg" type="image/svg+xml"></object>
       </div>
       <div class="d-flex align-items-center tablet-center">
-        <img class="exists--part" src="/src/assets/icons/as-part-of.svg" alt="" />
+        <img class="exists--part" src="/icons/as-part-of.svg" alt="" />
       </div>
     </div>
 

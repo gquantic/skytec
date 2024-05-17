@@ -19,8 +19,8 @@
   </div>
   <div class="top-bar-block">
     <div class="container d-flex justify-content-between align-items-center">
-      <object data="/src/assets/img/advantages/on_top.svg" class="on-top"></object>
-      <object data="/src/assets/img/advantages/media_bying.png" class="media-buying"></object>
+      <object data="/img/advantages/on_top.svg" class="on-top" type="image/svg+xml"></object>
+      <object data="/img/advantages/media_bying.png" class="media-buying"></object>
       <div class="a-refs">
         <a href="">adindex.ru</a>
         <a href="">sostav.ru</a>

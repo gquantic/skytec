@@ -25,7 +25,11 @@ const svgContent = ref('')
 
 onMounted(() => {
   axios
-    .get(props.icon)
+    .get(props.icon, {
+      headers: {
+        'Content-Type': 'image/svg+xml'
+      }
+    })
     .then((response) => {
       svgContent.value = response.data
     })
