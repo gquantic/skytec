@@ -20,7 +20,6 @@
             </div>
             <div class="link-open contact">
               <p>Связаться</p>
-              <div class="arrow"></div>
             </div>
             <a href="javascript:void(0);" @click="burgerHeader()">
               <img :src="icon_burger_menu" alt="" class="burger-sign" />
@@ -52,7 +51,7 @@
                 <h1>Команда</h1>
               </div>
             </div>
-            <div class="one-direction">
+            <div class="one-direction" @click="toContactsPage()">
               <div class="number">
                 <h2>03</h2>
               </div>
@@ -107,6 +106,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .white-logo {
+          display: block;
+          cursor: pointer;
+        }
         .black-logo {
           display: none;
         }
@@ -159,6 +162,7 @@
         }
         .black-logo {
           display: block;
+          cursor: pointer;
         }
 
         .header-other-links {
@@ -533,9 +537,14 @@ function toAboutUsPage() {
   resetBurger()
 }
 
+function toContactsPage() {
+  router.push('/contacts')
+  resetBurger()
+}
+
 function toMainPage() {
   router.push('/')
-  resetBurger
+  resetBurger()
 }
 
 function setTheme(theme: string) {
