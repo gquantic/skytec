@@ -3,26 +3,38 @@
     <div class="regular-header" id="burger-header">
       <div class="header-sections">
         <div class="upper-header">
-          <img :src="logo" alt="" @click="toMainPage()" class="white-logo" />
-          <img :src="blackLogo" alt="" @click="toMainPage()" class="black-logo" />
+          <img
+            v-if="headerIconTheme == 'black'"
+            :src="logo"
+            alt=""
+            @click="toMainPage()"
+            class="white-logo"
+          />
+          <img v-else :src="blackLogo" alt="" @click="toMainPage()" class="black-logo" />
 
           <div class="header-other-links">
             <div class="header-theme-change">
               <a href="javascript:void(0);" @click="setTheme('light')">
-                <img :src="icon_sun" alt="" class="white-sun" />
-                <img :src="icon_sun_black" alt="" class="black-sun" />
+                <img v-if="headerIconTheme == 'black'" :src="icon_sun" alt="" class="white-sun" />
+                <img v-else :src="icon_sun_black" alt="" class="black-sun" />
               </a>
               <div class="line"></div>
               <a href="javascript:void(0);" @click="setTheme('dark')">
-                <img :src="icon_moon" alt="" class="white-moon" />
-                <img :src="icon_moon_black" alt="" class="black-moon" />
+                <img v-if="headerIconTheme == 'black'" :src="icon_moon" alt="" class="white-moon" />
+                <img v-else :src="icon_moon_black" alt="" class="black-moon" />
               </a>
             </div>
             <div class="link-open contact">
               <p>Связаться</p>
             </div>
             <a href="javascript:void(0);" @click="burgerHeader()">
-              <img :src="icon_burger_menu" alt="" class="burger-sign" />
+              <img
+                v-if="headerIconTheme == 'black'"
+                :src="icon_burger_menu"
+                alt=""
+                class="burger-sign"
+              />
+              <img v-else :src="icon_burger_menu_black" alt="" class="burger-sign" />
               <img :src="icon_x" alt="" class="x-sign" />
               <div class="burger-menu burger-menu-hidden"></div>
             </a>
@@ -111,7 +123,7 @@
           cursor: pointer;
         }
         .black-logo {
-          display: none;
+          display: block;
         }
         .header-other-links {
           height: 100px;
@@ -124,10 +136,10 @@
             width: 100px;
             justify-content: space-between;
             .black-moon {
-              display: none;
+              display: block;
             }
             .black-sun {
-              display: none;
+              display: block;
             }
             .line {
               height: 26px;
@@ -158,7 +170,7 @@
     .header-sections {
       .upper-header {
         .white-logo {
-          display: none;
+          display: block;
         }
         .black-logo {
           display: block;
@@ -173,13 +185,13 @@
               display: block;
             }
             .white-moon {
-              display: none;
+              display: block;
             }
             .black-sun {
               display: block;
             }
             .white-sun {
-              display: none;
+              display: block;
             }
             .line {
               height: 26px;
@@ -501,6 +513,8 @@
 </style>
 
 <script setup lang="ts">
+import { ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import logo from '@/assets/img/logo.png'
 import blackLogo from '@/assets/img/logo-black.png'
 import icon_sun from '@/assets/icons/sun.svg'
@@ -508,17 +522,21 @@ import icon_sun_black from '@/assets/icons/sun-black.svg'
 import icon_moon from '@/assets/icons/moon.svg'
 import icon_moon_black from '@/assets/icons/moon-black.svg'
 import icon_burger_menu from '@/assets/icons/burger-menu.svg'
+import icon_burger_menu_black from '@/assets/icons/burger-menu-black.svg'
 import icon_x from '@/assets/icons/burger_x_sign.svg'
 import IconCircle from '@/components/icons/IconCircle.vue'
 import router from '@/router'
+
+let headerIconTheme = ref('black')
 
 function burgerHeader() {
   const headerElement = document.getElementById('burger-header')
   if (headerElement) {
     if (headerElement.className === 'regular-header') {
       headerElement.className += ' extended-header'
+      headerIconTheme.value = 'white'
     } else {
-      headerElement.className = 'regular-header'
+      resetBurger()
     }
   } else {
     console.error('Element with ID "burger-header" not found.')
@@ -526,15 +544,34 @@ function burgerHeader() {
 }
 
 function resetBurger() {
+  if (currentPath.value != '/about') {
+    headerIconTheme.value = 'black'
+  }
+
   const headerElement = document.getElementById('burger-header')
   if (headerElement) {
     headerElement.className = 'regular-header'
   }
 }
+const route = useRoute()
+const currentPath = ref(route.path)
+
+watch(
+  () => route.path,
+  (newPath) => {
+    currentPath.value = newPath
+    if (currentPath.value == '/about') {
+      headerIconTheme.value = 'white'
+    } else {
+      headerIconTheme.value = 'black'
+    }
+  }
+)
 
 function toAboutUsPage() {
   router.push('/about')
   resetBurger()
+  currentPath.value = 'white'
 }
 
 function toContactsPage() {
