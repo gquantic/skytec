@@ -1,5 +1,6 @@
 .footer {
   .container {
+    width: 88vw;
     .footer-other-info {
       flex-direction: row;
       .footer-mobile-email {
@@ -9,6 +10,27 @@
         }
         p {
           margin-left: 16px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  .footer {
+    .container {
+      width: 100vw;
+      .links {
+        margin-left: 10vw;
+      }
+      .footer-other-info {
+        display: flex;
+        flex-direction: column-reverse;
+        .footer-mobile-email {
+          justify-content: space-between;
+          .emails {
+            display: flex;
+            flex-direction: column;
+          }
         }
       }
     }

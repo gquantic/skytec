@@ -1,5 +1,5 @@
 <template>
-  <div class="directions-block block container">
+  <div class="directions-block block container" id="directions-block">
     <div class="row">
       <div class="col-lg-12 mb-5">
         <div class="gradient-line"></div>

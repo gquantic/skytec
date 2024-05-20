@@ -8,6 +8,7 @@
 
   .home-block {
     .container {
+      width: 80vw;
       .text {
         &:nth-child(1) {
           text-align: left !important;
@@ -20,9 +21,32 @@
     }
   }
 
+  // advantages
+
+  .advantages-block {
+    .container {
+      width: 80vw;
+    }
+  }
+
+  // top bar
+
+  .top-bar-block {
+    .container {
+      width: 80vw;
+      .a-refs {
+        margin-right: -290px;
+      }
+    }
+  }
+
   // work
 
   .work-block {
+    padding: 0 0 0 0;
+    .container {
+      width: 80vw;
+    }
     .work-header {
       h2 {
         width: 400px !important;
@@ -34,7 +58,6 @@
       }
     }
     .block {
-      padding: 166px 0 0 0;
       .content {
         padding: 30px 0 0 50px;
       }
@@ -62,9 +85,9 @@
   // as part of
 
   .as-part-of {
+    width: 80vw;
     .exists {
       display: flex;
-      //   flex-direction: column;
       .exists--logo {
         width: 24vw;
       }
@@ -77,6 +100,16 @@
   // team
 
   .team-block {
+    width: 80vw;
+    .row {
+      .teammates-grid-mobile {
+        .teammates {
+          gap: 94px 1.25vw;
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+    }
     .description {
       padding-left: 218px;
       p {
@@ -87,9 +120,23 @@
       }
     }
   }
+
+  // short desc
+
+  .short-desc-block {
+    .container {
+      width: 80vw;
+    }
+  }
+
+  // directions
+
+  .directions-block {
+    width: 80vw;
+  }
 }
 
-@media screen and (max-width: 1440px) and (min-width: 1200px) {
+@media screen and (max-width: 1430px) and (min-width: 1200px) {
   .team-block {
     .teammates {
       display: flex;

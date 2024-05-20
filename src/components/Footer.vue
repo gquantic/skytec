@@ -8,11 +8,11 @@ import { RouterLink } from 'vue-router';
           <p class="footer-sections" style="font-weight: 500">Разделы</p>
           <div class="line"></div>
           <div class="common-links">
-            <router-link to="/" @click="scrollToTop">Главная</router-link>
-            <a href="">Команда</a>
-            <a href="">Направления</a>
-            <router-link to="/about" @click="scrollToTop">Кто мы</router-link>
-            <router-link to="/contacts" @click="scrollToTop">Контакты</router-link>
+            <router-link to="/" @click="scrollToTop()">Главная</router-link>
+            <a @click="scrollToTeam()">Команда</a>
+            <a @click="scrollToDirections()">Направления</a>
+            <router-link to="/about" @click="scrollToTop()">Кто мы</router-link>
+            <router-link to="/contacts" @click="scrollToTop()">Контакты</router-link>
             <a href="">Обсудить проект</a>
           </div>
         </div>
@@ -47,7 +47,33 @@ import { RouterLink } from 'vue-router';
 </template>
 
 <script setup lang="ts">
+import { nextTick } from 'vue'
+import router from '@/router'
+
 function scrollToTop() {
   window.scrollTo(0, 0)
 }
+
+function scrollToTeam() {
+  router.push('/').then(() => {
+    nextTick(() => {
+      document.getElementById('team-block')?.scrollIntoView()
+    })
+  })
+}
+
+async function scrollToDirections() {
+  router.push('/').then(() => {
+    nextTick(() => {
+      document.getElementById('directions-block')?.scrollIntoView()
+    })
+  })
+}
 </script>
+<style lang="scss">
+.footer {
+  a {
+    cursor: pointer;
+  }
+}
+</style>

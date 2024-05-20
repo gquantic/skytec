@@ -1,5 +1,5 @@
 <template>
-  <div class="container team-block block">
+  <div class="container team-block block" id="team-block">
     <div class="row">
       <div class="col-lg-5">
         <div class="portrait">

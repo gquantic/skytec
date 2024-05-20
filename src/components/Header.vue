@@ -56,7 +56,7 @@
                 <h1>Кто мы</h1>
               </div>
             </div>
-            <div class="one-direction">
+            <div class="one-direction" @click="toTeamBlock()">
               <div class="number">
                 <h2>02</h2>
               </div>
@@ -72,7 +72,7 @@
                 <h1>контакты</h1>
               </div>
             </div>
-            <div class="one-direction">
+            <div class="one-direction" @click="toDirectionsBlock()">
               <div class="number">
                 <h2>04</h2>
               </div>
@@ -109,7 +109,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { ref, watch, nextTick } from 'vue'
 import { useRoute } from 'vue-router'
 import logo from '@/assets/img/logo.png'
 import blackLogo from '@/assets/img/logo-black.png'
@@ -177,6 +177,24 @@ function toContactsPage() {
 function toMainPage() {
   router.push('/')
   resetBurger()
+}
+
+function toTeamBlock() {
+  router.push('/').then(() => {
+    resetBurger()
+    nextTick(() => {
+      document.getElementById('team-block')?.scrollIntoView()
+    })
+  })
+}
+
+function toDirectionsBlock() {
+  router.push('/').then(() => {
+    resetBurger()
+    nextTick(() => {
+      document.getElementById('directions-block')?.scrollIntoView()
+    })
+  })
 }
 
 function setTheme(theme: string) {
